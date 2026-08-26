@@ -1,0 +1,18 @@
+const MENU = [
+  {id:'thongyip', name:'ทองหยิบ', unit:'กล่อง (10 ชิ้น)', price:120, color:'#E8B24A',
+    icon:`<ellipse cx="50" cy="50" rx="30" ry="20" fill="#E8B24A" stroke="#9C7420" stroke-width="2.5"/><ellipse cx="50" cy="42" rx="22" ry="12" fill="#F6D67A"/>`},
+  {id:'thongyod', name:'ทองหยอด', unit:'กล่อง (10 ชิ้น)', price:120, color:'#E8B24A',
+    icon:`<circle cx="35" cy="55" r="14" fill="#E8B24A"/><circle cx="55" cy="45" r="14" fill="#F0C25A"/><circle cx="70" cy="58" r="12" fill="#E8B24A"/>`},
+  {id:'foithong', name:'ฝอยทอง', unit:'ห่อ (100 กรัม)', price:80, color:'#D8A93B',
+    icon:`<path d="M15 65 q8 -35 18 0 q8 -35 18 0 q8 -35 18 0 q8 -35 18 0" stroke="#D8A93B" stroke-width="4" fill="none" stroke-linecap="round"/>`},
+  {id:'khanomchan', name:'ขนมชั้น', unit:'ถาด (9 ชิ้น)', price:150, color:'#E3A6A0',
+    icon:`<rect x="25" y="25" width="50" height="50" rx="5" fill="#F6D67A"/><rect x="25" y="25" width="50" height="8" fill="#E3A6A0"/><rect x="25" y="41" width="50" height="8" fill="#9FC08A"/><rect x="25" y="57" width="50" height="8" fill="#E3A6A0"/>`},
+  {id:'khanomtuay', name:'ขนมถ้วย', unit:'แพ็ค (6 ถ้วย)', price:90, color:'#9FC08A',
+    icon:`<ellipse cx="35" cy="55" rx="16" ry="12" fill="#9FC08A" stroke="#4B6B3F" stroke-width="2"/><ellipse cx="65" cy="55" rx="16" ry="12" fill="#F0C25A" stroke="#9C7420" stroke-width="2"/>`},
+  {id:'medkhanun', name:'เม็ดขนุน', unit:'กล่อง (12 ชิ้น)', price:130, color:'#F0C25A',
+    icon:`<ellipse cx="40" cy="50" rx="12" ry="17" fill="#F0C25A" stroke="#9C7420" stroke-width="2"/><ellipse cx="62" cy="50" rx="12" ry="17" fill="#E8B24A" stroke="#9C7420" stroke-width="2"/>`},
+  {id:'sangkhaya', name:'สังขยาฟักทอง', unit:'ลูก', price:180, color:'#D8892E',
+    icon:`<path d="M50 20 q28 8 24 40 q-4 28 -24 28 q-20 0 -24 -28 q-4 -32 24 -40 Z" fill="#D8892E"/><rect x="47" y="14" width="6" height="10" fill="#4B6B3F"/>`},
+  {id:'lodchong', name:'ลอดช่องน้ำกะทิ', unit:'แก้ว', price:40, color:'#9FC08A',
+    icon:`<path d="M25 75 q0 -45 25 -45 q25 0 25 45 Z" fill="#F3E4C8"/><path d="M28 55 q3 -8 0 -14 M40 50 q3 -8 0 -14 M52 55 q3 -8 0 -14 M64 50 q3 -8 0 -14" stroke="#4B6B3F" stroke-width="4" stroke-linecap="round"/>`},
+];
