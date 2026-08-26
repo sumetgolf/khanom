@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ขนมป้า — สั่งจองขนมไทย</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@400;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="bg-texture"></div>
+
+<nav class="nav">
+  <div class="brand"><span class="dot"></span> ขนมป้า</div>
+  <button class="nav-cart" id="openCartBtn">
+    🧺 ตะกร้า <span id="cartCount">0</span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div>
+    <div class="eyebrow">ขนมไทยทำมือ ตามสั่ง</div>
+    <h1>ขนมไทยแท้ ทำสด<br>ทีละ<em>ถาด</em> เพื่องานบุญ<br>และวันพิเศษของคุณ</h1>
+    <p>ทองหยิบ ทองหยอด ฝอยทอง ขนมชั้น และอีกหลายอย่าง ทำสดใหม่ตามจำนวนที่จอง เลือกเมนู ระบุจำนวน แล้วจองล่วงหน้าได้เลย รับของตามวันที่นัดหมาย</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary" onclick="document.getElementById('menu').scrollIntoView()">ดูเมนู &amp; เริ่มจอง</button>
+      <button class="btn btn-ghost" onclick="document.getElementById('how').scrollIntoView()">วิธีสั่งจอง</button>
+    </div>
+  </div>
+  <div class="tray-wrap">
+    <svg viewBox="0 0 320 260" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="160" cy="220" rx="140" ry="18" fill="#3A2E1F" opacity="0.08"/>
+      <ellipse cx="160" cy="200" rx="150" ry="34" fill="#E7D3A5" stroke="#C7962C" stroke-width="3"/>
+      <ellipse cx="160" cy="196" rx="130" ry="26" fill="#F3E4C8"/>
+      <g class="float-piece"><ellipse cx="95" cy="150" rx="26" ry="18" fill="#E8B24A"/><ellipse cx="95" cy="150" rx="26" ry="18" fill="none" stroke="#9C7420" stroke-width="2"/></g>
+      <g class="float-piece"><circle cx="150" cy="130" r="20" fill="#E3A6A0"/><circle cx="150" cy="130" r="20" fill="none" stroke="#c98883" stroke-width="2"/></g>
+      <g class="float-piece">
+        <rect x="195" y="120" width="42" height="34" rx="4" fill="#F6D67A"/>
+        <rect x="195" y="120" width="42" height="6" fill="#E3A6A0"/>
+        <rect x="195" y="132" width="42" height="6" fill="#9FC08A"/>
+        <rect x="195" y="144" width="42" height="6" fill="#E3A6A0"/>
+      </g>
+      <g class="float-piece"><path d="M60 165 q10 -30 20 0 q10 -30 20 0 q10 -30 20 0" stroke="#D8A93B" stroke-width="4" fill="none" stroke-linecap="round"/></g>
+      <g class="float-piece"><ellipse cx="230" cy="168" rx="16" ry="12" fill="#9FC08A"/><ellipse cx="230" cy="168" rx="16" ry="12" fill="none" stroke="#4B6B3F" stroke-width="2"/></g>
+      <g class="float-piece"><circle cx="260" cy="140" r="14" fill="#E8B24A"/></g>
+    </svg>
+  </div>
+</div>
+
+<!-- MENU -->
+<section id="menu">
+  <div class="section-head">
+    <div>
+      <h2>เมนูขนมวันนี้</h2>
+      <p>เลือกจำนวนที่ต้องการ แล้วกด "เพิ่มลงตะกร้า" — ทำสดตามออร์เดอร์ ไม่มีของค้างสต๊อก</p>
+    </div>
+  </div>
+  <div class="menu-grid" id="menuGrid"></div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="section-head">
+    <div><h2>วิธีสั่งจอง</h2></div>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><h3>เลือกขนม &amp; จำนวน</h3><p>เลือกได้หลายอย่างพร้อมกัน ระบุจำนวนที่ต้องการต่อรายการ</p></div>
+    <div class="step"><div class="num">2</div><h3>แจ้งวันที่ต้องการรับ</h3><p>ระบุชื่อ เบอร์โทร และวันที่อยากได้ขนม เผื่อเวลาทำล่วงหน้า</p></div>
+    <div class="step"><div class="num">3</div><h3>รอคอนเฟิร์ม</h3><p>ป้าจะติดต่อกลับตามเบอร์ที่ให้ไว้ เพื่อยืนยันวันรับและยอดชำระ</p></div>
+  </div>
+</section>
+
+<footer>
+  <p>ขนมป้า — ทำสดทุกออร์เดอร์ ✿ สอบถามเพิ่มเติมได้ทางเบอร์โทรที่แจ้งตอนจอง</p>
+  <button class="admin-link" id="adminToggle">หลังบ้าน (ดูรายการจองทั้งหมด)</button>
+</footer>
+
+<!-- ADMIN PANEL -->
+<div class="admin-panel" id="adminPanel">
+  <h2>รายการจองทั้งหมด</h2>
+  <p class="sub">หน้านี้แสดงออร์เดอร์ทุกรายการที่ลูกค้าจองเข้ามา (ข้อมูลนี้เก็บแบบ shared เห็นได้จากทุกคนที่เปิดลิงก์นี้)</p>
+  <button class="refresh-btn" id="refreshOrders">รีเฟรชรายการ</button>
+  <div id="ordersList"></div>
+</div>
+
+<!-- CART DRAWER -->
+<div class="drawer-overlay" id="overlay"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-head">
+    <h2 id="drawerTitle">ตะกร้าของฉัน</h2>
+    <button class="drawer-close" id="closeCartBtn">×</button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+  <div class="drawer-foot" id="drawerFoot"></div>
+</div>
+
+</body>
+<script src="js/storage-adapter.js"></script>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</html>
